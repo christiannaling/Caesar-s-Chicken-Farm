@@ -54,6 +54,8 @@ main{
 .introduction-contact-info{
   display: flex;
   flex-wrap: wrap;
+  width: 200px;
+  gap: 20px;
 }
 
 .introduction-contact-info i{
@@ -62,32 +64,19 @@ main{
 }
 
 .facebook{
-  flex: 0.92;
+  color: white;
+  text-decoration: none;
+  flex: auto;
 }
 .gmail{
-  flex: 0.62;
+  color: white;
+  text-decoration: none;
+  flex: auto;
 }
 .mobile-number{
-  flex: 1;
-}
-
-/* Styles for small devices */
-@media(max-width: 767px) {
-  .mobile-number{
-    flex: auto;
-  }
-}
-
-@media (max-width: 575px) {
-  .mobile-number{
-    flex: auto;
-  }
-}
-
-.service-section{
-  height: 100%;
-  margin-bottom: 8vh;
-  
+  color: white;
+  text-decoration: none;
+  flex: auto;
 }
 
 .second-section{
@@ -131,3 +120,46 @@ main{
   font-size: 2em;
   margin-left: 5vh;
 }
+
+.contact-container{
+  display: flex;
+  margin: 2vh 5vh 5vh 5vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+}
+
+.contact-intro{
+  text-align: center;
+  font-size: 1.5em;
+  margin-bottom: 2vh;
+}
+
+.contact-description{
+  text-align: justify;
+  margin-bottom: 2vh;
+  font-size: 1.2em;
+}
+
+.contact-info{
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.contact{
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.2);
+  width: 200px;
+  padding: 4vh;
+  border-radius: 8px;
+  flex: auto;
+}
+
+.contact i{
+  font-size: 50px;
+  margin-bottom: 8px;
+}
+
