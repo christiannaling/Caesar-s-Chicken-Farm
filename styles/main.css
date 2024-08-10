@@ -7,7 +7,7 @@ main{
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 5vh;
+  margin-bottom: 8vh;
 }
 
 .home-section img{
@@ -26,17 +26,26 @@ main{
   text-align: center;
   background-color: rgba(79, 79, 79, 0.642);
   backdrop-filter: blur(5px);
-  height: 40%;
+  height: 45%;
   width: 50%;
   color: rgb(255, 255, 255);
   border-radius: 10px;
   z-index: 5;
 }
 
+/* Styles for small devices */
+@media (min-width: 576px) and (max-width: 767px) {
+  .introduction-container{
+    height: 40%;
+    width: 65%;
+    padding: 20px;
+  }
+}
+
 @media (max-width: 575px) {
   .introduction-container{
-    height: 30%;
-    width: 80%;
+    height: 28%;
+    width: 70%;
     padding: 20px;
   }
 }
@@ -80,6 +89,7 @@ main{
   flex: auto;
 }
 
+/*Service*/
 .second-section{
   font-weight: bold;
   font-size: 2em;
@@ -88,21 +98,69 @@ main{
 
 .service-container{
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
   align-items: center;
-  background-color: rgb(255, 235, 155);
+  background-color: rgb(238, 208, 91);
   box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.2);
-  padding: 5vh 2vh;
-  margin: 1vh 5vh 5vh 5vh;
+  padding: 2vh 5vh;
+  margin: 4vh 5vh 5vh 5vh;
+  border-radius: 15px;
+}
 
+.service-left-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+.service-right-section{
+  display: flex;
+  justify-content: center;
+  height: 95vh;
+  width: 40%;
+}
+
+.service-right-section img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+@media (max-width: 767px) {
+  .service-left-section{
+    width: 100%;
+  }
+  .service-right-section{
+    display: none;
+  }
+  .service-right-section img{
+    display: none;
+  }
 }
 
 .service{
-  width: 80%;
+  width: 95%;
   border: none;
   background-color: rgb(249, 236, 217);
-  margin: 10px;
+  margin-top: 3vh;
+  margin-bottom: 3vh;
   text-align: justify;
+  border-radius: 10px;
+}
+
+.service-info{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.service img{
+  width: 15%;
+  margin-right: 2vh;
 }
 
 .service-title{
@@ -113,14 +171,108 @@ main{
 
 .service-container div{
   line-height: 3vh;
-  margin-bottom: 10px;
   padding: 10px;
 }
 
-.third-section{
+/* Styles for extra small devices */
+@media (max-width: 575px) {
+  .service-container{
+    padding: 2vh 4vh;
+  }
+  .service-info{
+    flex-direction: column;
+  }
+  .service img{
+    width: 35%;
+  }
+}
+
+/*About Us*/
+.about-us-container{
+  padding: 2vh 5vh 5vh 5vh;
+}
+
+.about-us-title{
+  font-weight: bold;
+  font-size: 2em;
+  margin-bottom: 3vh;
+}
+
+.about-product-container{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.about-container{
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: justify;
+  margin-bottom: 5vh;
+}
+
+.chicken-poultry-title{
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+.about-container img{
+  width: 50%;
+  object-fit: cover;
+  border-radius: 8px;
+  margin: 2vh 4vh 4vh 4vh;
+}
+
+.about-info{
+  background-color: #fefdfb;
+  padding: 4vh;
+  border-radius: 10px;
+}
+
+.product-container{
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: justify;
+}
+
+.product-title{
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+.product-container img{
+  width: 90%;
+  object-fit: cover;
+  border-radius: 8px;
+  margin: 4vh;
+}
+
+.product-info{
+  background-color: #fefdfb;
+  padding: 4vh;
+  border-radius: 10px;
+}
+
+@media (max-width: 767px) {
+  .about-container{
+    width: 100%;
+  }
+  .product-container{
+    width: 100%;
+  }
+}
+
+/*Contact Us*/
+.contact-us-title{
   font-weight: bold;
   font-size: 2em;
   margin-left: 5vh;
+  margin-bottom: 3vh;
 }
 
 .contact-container{
@@ -130,7 +282,6 @@ main{
   justify-content: center;
   align-items: center;
   text-align: center;
-
 }
 
 .contact-intro{
@@ -141,8 +292,8 @@ main{
 
 .contact-description{
   text-align: justify;
-  margin-bottom: 2vh;
-  font-size: 1.2em;
+  margin-bottom: 5vh;
+  font-size: 1.1em;
 }
 
 .contact-info{
@@ -158,6 +309,8 @@ main{
   padding: 4vh;
   border-radius: 8px;
   flex: auto;
+  margin-right: 2vh;
+  margin-bottom: 2vh;
 }
 
 .contact i{
