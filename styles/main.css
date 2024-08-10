@@ -318,3 +318,21 @@ main{
   margin-bottom: 8px;
 }
 
+.scroll-up{
+  background-color: rgb(235, 199, 115);
+  height: 6.5vh;
+  width: 6.5vh;
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  text-decoration: none;
+}
+
+.fa-arrow-up{
+  font-size: 15px;
+  color: rgb(197, 78, 78);
+}
