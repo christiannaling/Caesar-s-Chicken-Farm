@@ -3,6 +3,12 @@ main{
   background-color: rgb(249, 236, 217);
 }
 
+@media (max-width: 575px) {
+  main{
+    padding-top: 60px;
+  }
+}
+
 .home-section{
   display: flex;
   justify-content: center;
@@ -44,7 +50,7 @@ main{
 
 @media (max-width: 575px) {
   .introduction-container{
-    height: 28%;
+    height: 36%;
     width: 70%;
     padding: 20px;
   }
@@ -309,8 +315,7 @@ main{
   padding: 4vh;
   border-radius: 8px;
   flex: auto;
-  margin-right: 2vh;
-  margin-bottom: 2vh;
+  margin: 0vh 1vh 2vh 1vh;
 }
 
 .contact i{
